@@ -1,0 +1,24 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Site internet créé dans le cadre de la formation OpenClassRooms",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocharmengaud/ohmyfood.git"
+  },
+  "author": "rocharmengaud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rocharmengaud/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/rocharmengaud/ohmyfood#readme",
+  "devDependencies": {
+    "parcel": "^2.3.2",
+    "postcss": "^8.4.12",
+    "postcss-nested": "^5.0.6"
+  }
+}
