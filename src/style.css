@@ -1,3 +1,145 @@
+/* -----------------------------------BASE----------------------------------- */
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 1.5rem 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: var(--fs-big);
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: var(--fs-normal);
+}
+
+/* --------------------------------CUSTOM PROPERTIES-------------------------------- */
+:root {
+  --bg: #f2f2f2;
+  --white: #fff;
+  --lightgray: #e8e8e8;
+  --gray: #ddd;
+  --shadow: #b3b3b3;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --icons: #696e6a;
+
+  --fs-small: 0.5rem;
+  --fs-normal: 1rem;
+  --fs-big: 1.3rem;
+}
+
+/* -----------------------------------HEADER----------------------------------- */
+header .omf-logo {
+  padding-bottom: 1rem;
+}
+
+header .omf-logo img {
+  display: block;
+  margin: 0 auto;
+
+  object-fit: contain;
+}
+
+header .location {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 1rem 0;
+  background-color: var(--gray);
+}
+
+header .location-text {
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+header .discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--lightgray);
+}
+
+header h1 {
+  padding-bottom: 1rem;
+}
+
+header .discover-text {
+  padding: 3rem 5rem 1.5rem 5rem;
+  text-align: center;
+}
+
+header .btn-box {
+  background-color: var(--lightgray);
+  padding-bottom: 4.5rem;
+}
+
+header .explorer-btn {
+  padding: 1rem 1.2rem;
+  border: none;
+  font-weight: bold;
+  font-size: var(--fs-normal);
+  color: var(--white);
+  background: linear-gradient(-10deg, var(--primary) 25%, var(--secondary));
+  box-shadow: 0px 0px 20px var(--shadow);
+  border-radius: 30px;
+}
+
+/* ----------------------------DROPDOWN-WRAPPER---------------------------- */
+.dropdown-wrapper .dropdown-text {
+  font-weight: bold;
+  font-size: var(--fs-big);
+  padding-bottom: 1rem;
+}
+
+/* ----------------------------DROPDOWN-BUTTONS---------------------------- */
+.dropdown-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dropdown-buttons .dd-btn {
+  display: flex;
+  align-items: center;
+
+  padding: 1rem 0;
+  border: 2px var(--lightgray) solid;
+  border-radius: 30px;
+  background-color: var(--lightgray);
+}
+
+.fa-1 {
+  color: var(--white);
+}
+
+.fa-circle {
+  color: var(--primary);
+}
+
+.fa-mobile-screen-button {
+  color: var(--icons);
+  padding: 0 1rem;
+}
+
+.dd-btn-text {
+  font-weight: bold;
 }
