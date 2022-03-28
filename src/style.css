@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
 }
 
 h1 {
@@ -37,6 +37,7 @@ h2 {
   --shadow: #b3b3b3;
   --primary: #9356dc;
   --secondary: #ff79da;
+  --footer: #353839;
   --icons: #696e6a;
 
   --fs-small: 0.5rem;
@@ -103,21 +104,27 @@ header .explorer-btn {
   border-radius: 30px;
 }
 
-/* ----------------------------DROPDOWN-WRAPPER---------------------------- */
-.dropdown-wrapper .dropdown-text {
+/* ----------------------------STEPS-WRAPPER---------------------------- */
+.steps-wrapper {
+  padding: 2.5rem 0;
+}
+
+.steps-wrapper .steps-text {
   font-weight: bold;
   font-size: var(--fs-big);
   padding-bottom: 1rem;
 }
 
-/* ----------------------------DROPDOWN-BUTTONS---------------------------- */
-.dropdown-buttons {
+/* ----------------------------STEPS-BUTTONS---------------------------- */
+.steps-buttons {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  padding: 0 1.2rem;
 }
 
-.dropdown-buttons .dd-btn {
+.steps-buttons .steps-btn {
   display: flex;
   align-items: center;
 
@@ -127,7 +134,24 @@ header .explorer-btn {
   background-color: var(--lightgray);
 }
 
-.fa-1 {
+.steps-text {
+  padding: 0 1.2rem;
+  font-weight: bold;
+}
+
+.fa-layers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 0.8rem;
+}
+
+.fa-layers-text {
+  position: absolute;
+  font-size: 0.7rem;
+
   color: var(--white);
 }
 
@@ -136,10 +160,104 @@ header .explorer-btn {
 }
 
 .fa-mobile-screen-button {
+  padding: 0 2rem;
   color: var(--icons);
+}
+
+.fa-list {
+  padding: 0 2rem;
+  color: var(--icons);
+}
+
+.fa-burger {
+  padding: 0 2rem;
+  color: var(--icons);
+}
+
+/* -------------------------RESTAURANTS-WRAPPER------------------------- */
+.restaurants-wrapper {
+  padding: 3rem 0;
+  background-color: var(--gray);
+}
+
+.restaurants-wrapper h1 {
+  padding: 0 0 1rem 1rem;
+}
+
+/* ----------------------------CARD---------------------------------------- */
+.card {
+  display: flex;
+  flex-direction: column;
+
+  border: var(--gray) 1rem solid;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.card .card-image img {
+  object-fit: cover;
+  object-position: 100% 50%;
+  width: 100%;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+  background-color: var(--white);
+}
+
+.card-bottom .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem 0;
+}
+
+.card-bottom .primary-text {
+  font-weight: bold;
+}
+
+.fa-heart:hover {
+  font-weight: 900;
+}
+
+/* -----------------------------FOOTER--------------------------------- */
+footer {
+  padding: 1.5rem 0;
+  background-color: var(--footer);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+footer .footer-block {
   padding: 0 1rem;
 }
 
-.dd-btn-text {
-  font-weight: bold;
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  padding-bottom: 1rem;
+}
+
+.footer-logo img {
+  -webkit-filter: invert(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+}
+
+.fa-utensils {
+  color: var(--white);
+}
+
+.fa-handshake {
+  color: var(--white);
 }
