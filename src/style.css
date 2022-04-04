@@ -34,7 +34,7 @@ h2 {
 :root {
   --bg: #f2f2f2;
   --white: #fff;
-  --lightgray: #e8e8e8;
+  --lightgray: #e8e6e6;
   --gray: #ddd;
   --darkshadow: #919191;
   --primary: #9356dc;
@@ -95,7 +95,7 @@ header {
   }
 }
 
-header .explorer-btn {
+.gradient-btn {
   padding: 1rem 1.2rem;
   border: none;
   font-weight: bold;
@@ -105,10 +105,6 @@ header .explorer-btn {
   box-shadow: 0 7px 9px -8px var(--darkshadow);
   border-radius: 30px;
   cursor: pointer;
-}
-
-header .btn-box {
-  background-color: var(--lightgray);
 }
 
 /* ----------------------------STEPS-WRAPPER---------------------------- */
@@ -177,7 +173,7 @@ header .btn-box {
 /* -------------------------RESTAURANTS-WRAPPER------------------------- */
 .restaurants-wrapper {
   padding: 3rem 1rem;
-  background-color: var(--gray);
+  background-color: var(--lightgray);
 
   h1 {
     padding-bottom: 1rem;
@@ -253,7 +249,7 @@ header .btn-box {
     background: linear-gradient(-10deg, var(--primary) 25%, var(--secondary));
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     cursor: pointer;
     transition: 0.5s;
   }
