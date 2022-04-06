@@ -46,6 +46,8 @@ h2 {
   --fs-small: 0.5rem;
   --fs-normal: 1rem;
   --fs-big: 1.3rem;
+
+  --anim-size: 64px;
 }
 
 .bold {
@@ -54,6 +56,10 @@ h2 {
 
 .flex {
   display: flex;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 /* ----------------------------------HEADER---------------------------------- */
@@ -134,15 +140,21 @@ header {
 
 .menu-card {
   justify-content: space-between;
-  align-items: flex-end;
   background-color: var(--white);
-  padding: 1rem;
   border-radius: 15px;
-}
+  width: 100%;
+  overflow: hidden;
 
-.menu-text {
-  flex-direction: column;
-  gap: 0.3rem;
+  .menu-content {
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .menu-text {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
 }
 
 .btn-box {
@@ -162,8 +174,32 @@ header {
   cursor: pointer;
 }
 
+.checkmark-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--anim-size);
+  background-color: var(--new);
+
+  .checkmark-circle {
+    position: relative;
+    background-color: var(--white);
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+  }
+
+  .fa-check {
+    color: var(--new);
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+  }
+}
+
+/* ---------------------------FOOTER--------------------------- */
 footer {
-  padding-top: 2rem;
+  padding: 1.5rem 0;
   background-color: var(--footer);
 
   a {
