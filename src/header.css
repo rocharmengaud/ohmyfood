@@ -4,14 +4,15 @@ header {
   }
 
   .omf-logo {
+    display: block;
     padding-bottom: 1rem;
+  }
 
-    img {
-      display: block;
-      margin: 0 auto;
+  .omf-logo img {
+    display: block;
+    margin: 0 auto;
 
-      object-fit: contain;
-    }
+    object-fit: contain;
   }
 
   .location {

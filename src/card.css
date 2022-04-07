@@ -128,6 +128,7 @@
 }
 
 .menu-card {
+  --anim-size: 70px;
   justify-content: space-between;
   background-color: var(--white);
   box-shadow: 0 7px 9px -8px var(--darkshadow);
@@ -138,13 +139,40 @@
   &:hover {
     cursor: pointer;
   }
+
   &:hover .checkmark-box {
-    transform: translateX(0);
-    width: 70px;
+    width: var(--anim-size);
   }
   &:hover .fa-check {
     visibility: visible;
-    transform: rotate(0deg);
+    animation: spin 0.5s forwards;
+  }
+
+  .checkmark-box {
+    overflow: hidden;
+    width: 0;
+    background-color: var(--new);
+    transition: all 300ms ease-in-out;
+
+    .checkmark-circle {
+      position: relative;
+      background-color: var(--white);
+      height: 25px;
+      width: 25px;
+      top: calc(var(--anim-size) / 2 - 12.5px);
+      /* Moitié de la width - moitié du cercle */
+      left: calc(var(--anim-size) / 2 - 12.5px);
+      border-radius: 100%;
+    }
+
+    .fa-check {
+      color: var(--new);
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      transform: rotate(-360deg);
+      transition: all 500ms ease-in-out;
+    }
   }
 
   .menu-content {
@@ -159,31 +187,11 @@
   }
 }
 
-.checkmark-box {
-  width: 0%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--new);
-  transform: translateX(100%);
-  transition: all 500ms ease-in-out;
-
-  .checkmark-circle {
-    overflow: hidden;
-    position: relative;
-    background-color: var(--white);
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
+@keyframes spin {
+  from {
+    transform: rotate(90deg);
   }
-
-  .fa-check {
-    visibility: hidden;
-    color: var(--new);
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    transform: rotate(-360deg);
-    transition: all 500ms ease-in-out;
+  to {
+    transform: rotate(360deg);
   }
 }
