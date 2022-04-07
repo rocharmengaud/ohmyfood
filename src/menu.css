@@ -1,0 +1,55 @@
+.menu {
+  padding-top: 16rem;
+  background-image: url('/src/assets/restaurants/a_la_française.jpg');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.menu-list {
+  padding: 1rem;
+  background-color: var(--lightgray);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  .start {
+    position: relative;
+    padding-top: 1.5rem;
+  }
+}
+
+.start::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  height: 3px;
+  width: 3rem;
+  background-color: var(--new);
+}
+
+.restaurant-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  .restaurant-title {
+    font-family: 'Shrikhand', cursive;
+    font-size: var(--fs-big);
+  }
+
+  .fa-heart {
+    font-size: 1.25rem;
+
+    &:hover {
+      font-weight: 800;
+      background: linear-gradient(-10deg, var(--primary) 25%, var(--secondary));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+  }
+}

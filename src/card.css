@@ -82,3 +82,108 @@
     transition: 0.5s;
   }
 }
+
+/* -------------------------MENU-CARDS------------------------- */
+.menu-card-wrapper {
+  flex-direction: column;
+  gap: 1rem;
+  .menu-card:nth-child(2) {
+    animation: op 500ms;
+  }
+  .menu-card:nth-child(3) {
+    animation: op 1000ms;
+  }
+  .menu-card:nth-child(4) {
+    animation: op 1500ms;
+  }
+  .menu-card:nth-child(6) {
+    animation: op 2000ms;
+  }
+  .menu-card:nth-child(7) {
+    animation: op 2500ms;
+  }
+  .menu-card:nth-child(8) {
+    animation: op 3000ms;
+  }
+  .menu-card:nth-child(10) {
+    animation: op 3500ms;
+  }
+  .menu-card:nth-child(11) {
+    animation: op 4000ms;
+  }
+  .menu-card:nth-child(12) {
+    animation: op 4500ms;
+  }
+}
+
+@keyframes op {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.menu-card {
+  justify-content: space-between;
+  background-color: var(--white);
+  box-shadow: 0 7px 9px -8px var(--darkshadow);
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .checkmark-box {
+    transform: translateX(0);
+    width: 70px;
+  }
+  &:hover .fa-check {
+    visibility: visible;
+    transform: rotate(0deg);
+  }
+
+  .menu-content {
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .menu-text {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+
+.checkmark-box {
+  width: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--new);
+  transform: translateX(100%);
+  transition: all 500ms ease-in-out;
+
+  .checkmark-circle {
+    overflow: hidden;
+    position: relative;
+    background-color: var(--white);
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+  }
+
+  .fa-check {
+    visibility: hidden;
+    color: var(--new);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transform: rotate(-360deg);
+    transition: all 500ms ease-in-out;
+  }
+}
