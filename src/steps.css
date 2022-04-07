@@ -1,0 +1,62 @@
+/* ----------------------------STEPS-WRAPPER---------------------------- */
+.steps-wrapper {
+  padding: 2.5rem 1rem;
+
+  .steps-text {
+    font-weight: bold;
+    font-size: var(--fs-big);
+    padding-bottom: 1rem;
+  }
+}
+
+/* ----------------------------STEPS-BUTTONS---------------------------- */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .steps-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    padding: 1.5rem 0;
+    border-radius: 20px;
+    background-color: var(--lightgray);
+    box-shadow: 0 7px 9px -8px var(--darkshadow);
+
+    &:hover {
+      cursor: pointer;
+      background-color: #ddc2ff;
+      transition: 0.5s;
+    }
+  }
+}
+
+.fa-layers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: -0.5rem;
+
+  .fa-layers-text {
+    position: absolute;
+    font-size: 0.7rem;
+
+    color: var(--white);
+  }
+}
+
+.fa-list,
+.fa-burger,
+.fa-mobile-screen-button {
+  padding: 0 1.9rem 0 2.5rem;
+  /* 1.9rem car on enleve les 0.6rem en position absolute sur .fa-layers */
+  color: var(--icons);
+}
+
+.fa-circle {
+  color: var(--primary);
+}

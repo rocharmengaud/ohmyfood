@@ -1,0 +1,16 @@
+:root {
+  --bg: #f2f2f2;
+  --white: #fff;
+  --lightgray: #e8e6e6;
+  --gray: #ddd;
+  --darkshadow: #919191;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --footer: #353839;
+  --icons: #696e6a;
+  --new: #99e2d0;
+
+  --fs-small: 0.5rem;
+  --fs-normal: 1rem;
+  --fs-big: 1.3rem;
+}
