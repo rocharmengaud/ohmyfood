@@ -28,7 +28,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  animation: ringanim 2s linear infinite;
+  animation: ringanim 1s linear infinite;
 }
 
 .ring::before {
@@ -39,7 +39,7 @@
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px #ffffff4d;
 }
 
 @keyframes ringanim {
@@ -62,7 +62,8 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 20px;
-  animation: textanim 3s ease-in-out infinite;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: textanim 1.5s ease-in-out infinite;
 }
 
 @keyframes textanim {

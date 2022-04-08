@@ -8,6 +8,76 @@
   }
 }
 
+/* -------------------------MENU-CARDS------------------------- */
+.menu-card {
+  --anim-size: 70px;
+  justify-content: space-between;
+  background-color: var(--white);
+  box-shadow: 0 7px 9px -8px var(--darkshadow);
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .checkmark-box {
+    width: var(--anim-size);
+  }
+  &:hover .fa-check {
+    visibility: visible;
+    animation: spin 0.5s forwards;
+  }
+
+  .checkmark-box {
+    overflow: hidden;
+    width: 0;
+    background-color: var(--new);
+    transition: all 300ms ease-in-out;
+
+    .checkmark-circle {
+      position: relative;
+      background-color: var(--white);
+      height: 25px;
+      width: 25px;
+      top: calc(var(--anim-size) / 2 - 12.5px);
+      /* Moitié de la width - moitié du cercle */
+      left: calc(var(--anim-size) / 2 - 12.5px);
+      border-radius: 100%;
+    }
+
+    .fa-check {
+      color: var(--new);
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      transform: rotate(-360deg);
+      transition: all 500ms ease-in-out;
+    }
+  }
+
+  .menu-content {
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .menu-text {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* ----------------------------CARDS-------------------------------- */
 .cards-wrapper {
   position: relative;
@@ -83,115 +153,98 @@
   }
 }
 
-/* -------------------------MENU-CARDS------------------------- */
+/* -------------------------MENU-CARDS ANIMATION------------------------- */
+@for $i from 1 to 100 {
+  .menu-card:nth-child($i) {
+    opacity: 0;
+    animation: fadin 0.5s;
+    /* prettier-ignore */
+    animation-delay: calc(2s + $(i)s / 10);
+    animation-fill-mode: forwards;
+  }
+}
+/* $i représente le numéro des childs qui incrémente */
+
 .menu-card-wrapper {
   flex-direction: column;
   gap: 1rem;
-  .menu-card:nth-child(2) {
-    animation: op 500ms;
+}
+
+/* .menu-card:nth-child(2) {
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: calc(2s + 1s / 10);
+    animation-fill-mode: forwards;
   }
   .menu-card:nth-child(3) {
-    animation: op 1000ms;
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: calc(2s + 2s / 10);
+    animation-fill-mode: forwards;
   }
   .menu-card:nth-child(4) {
-    animation: op 1500ms;
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: calc(2s + 3s / 10);
+    animation-fill-mode: forwards;
+  }
+  .start:nth-child(5) {
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: 2400ms;
+    animation-fill-mode: forwards;
   }
   .menu-card:nth-child(6) {
-    animation: op 2000ms;
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: 2500ms;
+    animation-fill-mode: forwards;
   }
   .menu-card:nth-child(7) {
-    animation: op 2500ms;
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: 2600ms;
+    animation-fill-mode: forwards;
   }
   .menu-card:nth-child(8) {
-    animation: op 3000ms;
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: 2700ms;
+    animation-fill-mode: forwards;
+  }
+  .start:nth-child(9) {
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: 2800ms;
+    animation-fill-mode: forwards;
   }
   .menu-card:nth-child(10) {
-    animation: op 3500ms;
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: 2900ms;
+    animation-fill-mode: forwards;
   }
   .menu-card:nth-child(11) {
-    animation: op 4000ms;
+    opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: 3000ms;
+    animation-fill-mode: forwards;
   }
   .menu-card:nth-child(12) {
-    animation: op 4500ms;
-  }
-}
-
-@keyframes op {
-  0% {
-    transform: translateY(25px);
     opacity: 0;
+    animation: fadin 0.5s;
+    animation-delay: 3100ms;
+    animation-fill-mode: forwards;
+  }
+} */
+
+@keyframes fadin {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
   }
   100% {
-    transform: translateY(0px);
     opacity: 1;
-  }
-}
-
-.menu-card {
-  --anim-size: 70px;
-  justify-content: space-between;
-  background-color: var(--white);
-  box-shadow: 0 7px 9px -8px var(--darkshadow);
-  border-radius: 15px;
-  width: 100%;
-  overflow: hidden;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:hover .checkmark-box {
-    width: var(--anim-size);
-  }
-  &:hover .fa-check {
-    visibility: visible;
-    animation: spin 0.5s forwards;
-  }
-
-  .checkmark-box {
-    overflow: hidden;
-    width: 0;
-    background-color: var(--new);
-    transition: all 300ms ease-in-out;
-
-    .checkmark-circle {
-      position: relative;
-      background-color: var(--white);
-      height: 25px;
-      width: 25px;
-      top: calc(var(--anim-size) / 2 - 12.5px);
-      /* Moitié de la width - moitié du cercle */
-      left: calc(var(--anim-size) / 2 - 12.5px);
-      border-radius: 100%;
-    }
-
-    .fa-check {
-      color: var(--new);
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      transform: rotate(-360deg);
-      transition: all 500ms ease-in-out;
-    }
-  }
-
-  .menu-content {
-    padding: 1rem;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .menu-text {
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(90deg);
-  }
-  to {
-    transform: rotate(360deg);
+    transform: translateY(0px);
   }
 }

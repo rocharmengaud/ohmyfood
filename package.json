@@ -19,6 +19,7 @@
   "devDependencies": {
     "parcel": "^2.3.2",
     "postcss": "^8.4.12",
+    "postcss-for": "^2.1.1",
     "postcss-nested": "^5.0.6"
   }
 }
