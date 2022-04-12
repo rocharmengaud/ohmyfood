@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>À la Française</title>
+    <title>La note enchantée</title>
   </head>
   <body>
     <header>
@@ -22,59 +22,64 @@
       </a>
     </header>
     <section>
-      <div class="menu alafrancaise">
+      <div class="menu lanoteenchantee">
         <div class="menu-list">
           <div class="restaurant-name">
-            <div class="restaurant-title">À la française</div>
+            <div class="restaurant-title">La note enchantée</div>
             <i class="fa-regular fa-heart"></i>
           </div>
           <div class="menu-card-wrapper flex">
             <div class="start">ENTRÉES</div>
             <include src="src/menu-card.html" locals='{
-              "meal": "Tartare de poulpe acidulé",
-              "ingredients": "Aux zests d’orange",
+              "meal": "Ravioles de foie gras",
+              "ingredients": "Accompagnés de leur crème à la truffe",
               "price": "25€"}'>
         </include>
           <include src="src/menu-card.html" locals='{
-            "meal": "Velouté de légumes d’antan",
-            "ingredients": "Carotte, panais, topinambour",
+            "meal": "Caviar osciètre",
+            "ingredients": "Sur blini à la farine de blé noir",
             "price": "35€"}'>
       </include>
         <include src="src/menu-card.html" locals='{
-          "meal": "Soupe à l’oignon",
-          "ingredients": "Revisitée",
+          "meal": "Homard et espuma de potiron",
+          "ingredients": "Mariné aux zestes d’orange",
           "price": "20€"}'>
     </include>
+    <include src="src/menu-card.html" locals='{
+      "meal": "Foie gras de canard cuit entier",
+      "ingredients": "Confiture de figue et pain toasté",
+      "price": "35€"}'>
+</include>
           <div class="start">PLATS</div>
           <include src="src/menu-card.html" locals='{
-            "meal": "Coquilles Saint-Jacques",
-            "ingredients": "Accompagnées d’une purée de panais",
+            "meal": "Noix de coquilles Saint-Jacques",
+            "ingredients": "Sur lit de purée de céleri-rave",
             "price": "40€"}'>
       </include>
         <include src="src/menu-card.html" locals='{
-          "meal": "Magret de canard",
-          "ingredients": "Et parmentier de pommes de terre",
+          "meal": "Langoustine poêlée",
+          "ingredients": "Purée de patate douce",
           "price": "35€"}'>
     </include>
       <include src="src/menu-card.html" locals='{
-        "meal": "Pigeonneau d’Ille-et-Vilaine",
-        "ingredients": "Sur son lit de gnocchis aux légumes",
+        "meal": "Mijoté de queue de boeuf",
+        "ingredients": "Et riz sauvage aux zestes de citron",
         "price": "44€"}'>
   </include>
             <div class="start">DESSERTS</div>
             <include src="src/menu-card.html" locals='{
-              "meal": "Pétales de violettes glacés",
-              "ingredients": "Et purée de noisettes",
+              "meal": "Macaron noisette et chocolat",
+              "ingredients": "Glace au caramel brun et sel de Guérande",
               "price": "18€"}'>
         </include>
           <include src="src/menu-card.html" locals='{
-            "meal": "Fondant au chocolat",
-            "ingredients": "Revisité",
+            "meal": "Baba au rhum revisité",
+            "ingredients": "Avec son coulis de citron",
             "price": "22€"}'>
       </include>
         <include src="src/menu-card.html" locals='{
-          "meal": "Millefeuille croustillant",
-          "ingredients": "Myrtilles et pâte d’amande",
+          "meal": "Tarte au citron meringuée",
+          "ingredients": "Déstructurée",
           "price": "23€"}'>
     </include>
       </div>

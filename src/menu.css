@@ -1,9 +1,24 @@
-.menu-alafrancaise {
+.menu {
   padding-top: 16rem;
-  background-image: url('/src/assets/restaurants/a_la_française.jpg');
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.alafrancaise {
+  background-image: url('/src/assets/restaurants/a_la_française.jpg');
+}
+
+.lapalettedugout {
+  background-image: url('/src/assets/restaurants/la_palette_du_gout.jpg');
+}
+
+.ledelicedessens {
+  background-image: url('/src/assets/restaurants/le_delice_des_sens.jpg');
+}
+
+.lanoteenchantee {
+  background-image: url('/src/assets/restaurants/la_note_enchantee.jpg');
 }
 
 .menu-list {

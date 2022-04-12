@@ -35,6 +35,14 @@
     animation: spin 0.5s forwards;
   }
 
+  /* .text-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  Pour cacher le texte en trop une fois que l'utilisateur 
+  à hover un plat trop long */
+
   .checkmark-box {
     overflow: hidden;
     width: 0;
