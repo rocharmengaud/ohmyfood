@@ -35,14 +35,6 @@
     animation: spin 0.5s forwards;
   }
 
-  /* .text-hide {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  Pour cacher le texte en trop une fois que l'utilisateur 
-  à hover un plat trop long */
-
   .checkmark-box {
     overflow: hidden;
     width: 0;
@@ -71,15 +63,26 @@
   }
 
   .menu-content {
+    min-width: 0;
     padding: 1rem;
     justify-content: space-between;
     align-items: flex-end;
   }
 
   .menu-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     flex-direction: column;
     gap: 0.3rem;
   }
+}
+
+.meal,
+.ingredients {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @keyframes spin {

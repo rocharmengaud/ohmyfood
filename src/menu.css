@@ -51,7 +51,7 @@
 
   .restaurant-title {
     font-family: 'Shrikhand', cursive;
-    font-size: var(--fs-big);
+    font-size: var(--fs-title);
   }
 
   .fa-heart {
