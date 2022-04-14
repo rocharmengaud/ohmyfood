@@ -103,7 +103,7 @@
     opacity: 0;
     animation: fadin 0.5s;
     /* prettier-ignore */
-    animation-delay: calc(2s + $(i)s / 10);
+    animation-delay: calc($(i)s / 10);
     animation-fill-mode: forwards;
   }
 }
