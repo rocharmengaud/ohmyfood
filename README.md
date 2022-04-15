@@ -13,7 +13,6 @@ During my web development training within the [openclassroom cursus](https://ope
 - Clone the project `cd` into it
 - `npm install`
 - `npm start`
-- Enjoy
 
 ## Build
 
