@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@import url('/src/css/base.css');
+@import url('/src/css/variables.css');
+@import url('/src/css/utilities.css');
+@import url('/src/components/gradient-btn.css');
+@import url('/src/components/header.css');
+@import url('/src/components/steps.css');
+@import url('/src/components/card.css');
+@import url('/src/components/menu-card.css');
+@import url('/src/components/footer.css');
+@import url('/src/components/menu.css');
+@import url('/src/components/loading.css');

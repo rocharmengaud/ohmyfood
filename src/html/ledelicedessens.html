@@ -8,14 +8,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Le délice des sens</title>
   </head>
   <body>
     <header>
-      <a href="index.html" class="omf-logo">
+      <a href="./index.html" class="omf-logo">
         <img
-          src="assets/ohmyfood.png"
+          src="../assets/ohmyfood.png"
           height="30"
           alt="Logo du site Ohmyfood!"
         />
@@ -30,49 +30,49 @@
           </div>
           <div class="menu-card-wrapper flex">
             <div class="start">ENTRÉES</div>
-            <include src="src/menu-card.html" locals='{
+            <include src="src/components/menu-card.html" locals='{
               "meal": "Tartare de thon",
               "ingredients": "Assaisonné au yuzu",
               "price": "25€"}'>
         </include>
-          <include src="src/menu-card.html" locals='{
+          <include src="src/components/menu-card.html" locals='{
             "meal": "Bouchée de homard croustillant",
             "ingredients": "Et sa farandole de petits légumes",
             "price": "35€"}'>
       </include>
-        <include src="src/menu-card.html" locals='{
+        <include src="src/components/menu-card.html" locals='{
           "meal": "Velouté de cèpes",
           "ingredients": "Aux truffes",
           "price": "20€"}'>
     </include>
           <div class="start">PLATS</div>
-          <include src="src/menu-card.html" locals='{
+          <include src="src/components/menu-card.html" locals='{
             "meal": "Poulet rôti aux herbes de Provence",
             "ingredients": "Et sa crème de truffe",
             "price": "40€"}'>
       </include>
-        <include src="src/menu-card.html" locals='{
+        <include src="src/components/menu-card.html" locals='{
           "meal": "Langouste rôtie",
           "ingredients": "Et ses légumes de saison",
           "price": "35€"}'>
     </include>
-      <include src="src/menu-card.html" locals='{
+      <include src="src/components/menu-card.html" locals='{
         "meal": "Côte de boeuf Angus",
         "ingredients": "Et sa purée de panais",
         "price": "44€"}'>
   </include>
             <div class="start">DESSERTS</div>
-            <include src="src/menu-card.html" locals='{
+            <include src="src/components/menu-card.html" locals='{
               "meal": "Farandole de desserts",
               "ingredients": "Du chef",
               "price": "18€"}'>
         </include>
-          <include src="src/menu-card.html" locals='{
+          <include src="src/components/menu-card.html" locals='{
             "meal": "Crème brulée",
             "ingredients": "Revisitée",
             "price": "22€"}'>
       </include>
-        <include src="src/menu-card.html" locals='{
+        <include src="src/components/menu-card.html" locals='{
           "meal": "Tiramisu",
           "ingredients": "À la noisette",
           "price": "23€"}'>
@@ -85,7 +85,7 @@
       </div>
     </section>
     <footer>
-      <include src="src/footer.html"></include>
+      <include src="src/components/footer.html"></include>
     </footer>
   </body>
 </html>

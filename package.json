@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Site internet créé dans le cadre de la formation OpenClassRooms",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel src/html/index.html",
+    "build": "parcel build src/html/index.html"
   },
   "repository": {
     "type": "git",
