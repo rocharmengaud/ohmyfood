@@ -1,4 +1,4 @@
-# ohmyfood
+# Ohmyfood!
 
 "Ohmyfood!" is my first web app using html and css + node packages
 
