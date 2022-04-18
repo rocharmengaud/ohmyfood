@@ -13,4 +13,9 @@
   box-shadow: 0 7px 9px -8px var(--darkshadow);
   border-radius: 30px;
   cursor: pointer;
+
+  &:hover {
+    opacity: 85%;
+    box-shadow: 0 15px 9px -8px var(--darkshadow);
+  }
 }
