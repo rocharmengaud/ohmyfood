@@ -35,6 +35,15 @@
     animation: spin 0.5s forwards;
   }
 
+  @keyframes spin {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   .checkmark-box {
     overflow: hidden;
     width: 0;
@@ -83,15 +92,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(90deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /* -------------------------MENU-CARDS ANIMATION------------------------- */
