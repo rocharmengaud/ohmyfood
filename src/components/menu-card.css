@@ -30,16 +30,17 @@
   &:hover .checkmark-box {
     width: var(--anim-size);
   }
+
   &:hover .fa-check {
     visibility: visible;
     animation: spin 0.5s forwards;
   }
 
   @keyframes spin {
-    from {
+    0% {
       transform: rotate(90deg);
     }
-    to {
+    100% {
       transform: rotate(360deg);
     }
   }
