@@ -12,6 +12,32 @@
   .card-block {
     flex-direction: row;
   }
+
+  .restaurants-wrapper .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+
+  .steps-wrapper .steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .steps-item-text {
+    padding-right: 50px;
+  }
+
+  .menu-card-wrapper .card-block {
+    flex-direction: row;
+  }
+
+  section .menu {
+    background-size: cover;
+    background-position: 0px -400px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -25,7 +51,7 @@
     max-width: 1600px;
   }
 
-  .steps {
+  .steps-wrapper .steps {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -34,7 +60,7 @@
     padding-right: 50px;
   }
 
-  .cards-wrapper {
+  .restaurants-wrapper .cards-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -42,7 +68,7 @@
     max-width: 1600px;
   }
 
-  .card-block {
+  .menu-card-wrapper .card-block {
     flex-direction: row;
   }
 
@@ -50,7 +76,7 @@
     width: calc(50% - 1rem);
   }
 
-  .menu {
+  section .menu {
     background-size: cover;
     background-position: 0px -400px;
   }
