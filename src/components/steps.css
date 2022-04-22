@@ -29,6 +29,13 @@
       cursor: pointer;
       background-color: #ddc2ff;
       transition: 0.5s;
+
+      .fa-list,
+      .fa-burger,
+      .fa-mobile-screen-button {
+        color: var(--primary);
+        transition: 0.5s;
+      }
     }
   }
 }
