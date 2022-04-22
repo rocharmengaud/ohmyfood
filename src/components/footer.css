@@ -18,6 +18,7 @@ footer {
       padding-bottom: 1rem;
 
       img {
+        height: 15px;
         filter: invert(100%);
       }
     }
