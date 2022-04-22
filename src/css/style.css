@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 @import url('/src/css/base.css');
-@import url('/src/css/breakpoints-index.css');
+@import url('/src/css/breakpoints.css');
 @import url('/src/css/variables.css');
 @import url('/src/css/utilities.css');
 @import url('/src/components/gradient-btn.css');

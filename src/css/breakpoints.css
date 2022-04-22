@@ -4,13 +4,23 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
   .card {
     width: calc(50% - 1rem);
+  }
+
+  .card-block {
+    flex-direction: row;
   }
 }
 
 @media (min-width: 1024px) {
   .restaurants-wrapper h1 {
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+
+  .steps-wrapper {
     margin: 0 auto;
     max-width: 1600px;
   }
@@ -32,12 +42,16 @@
     max-width: 1600px;
   }
 
-  .steps-wrapper {
-    margin: 0 auto;
-    max-width: 1600px;
+  .card-block {
+    flex-direction: row;
   }
 
   .card {
     width: calc(50% - 1rem);
+  }
+
+  .menu {
+    background-size: cover;
+    background-position: 0px -400px;
   }
 }
