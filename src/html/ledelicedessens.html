@@ -14,11 +14,7 @@
   <body>
     <header>
       <a href="./index.html" class="omf-logo">
-        <img
-          src="../assets/ohmyfood.png"
-          height="30"
-          alt="Logo du site Ohmyfood!"
-        />
+        <img src="../assets/ohmyfood.png" alt="Logo du site Ohmyfood!" />
       </a>
     </header>
     <section>
@@ -30,58 +26,91 @@
           </div>
           <div class="menu-card-wrapper flex">
             <div class="start">ENTRÉES</div>
-            <include src="src/components/menu-card.html" locals='{
+            <div class="card-block">
+              <include
+                src="src/components/menu-card.html"
+                locals='{
               "meal": "Tartare de thon",
               "ingredients": "Assaisonné au yuzu",
-              "price": "25€"}'>
-        </include>
-          <include src="src/components/menu-card.html" locals='{
+              "price": "25€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
             "meal": "Bouchée de homard croustillant",
             "ingredients": "Et sa farandole de petits légumes",
-            "price": "35€"}'>
-      </include>
-        <include src="src/components/menu-card.html" locals='{
+            "price": "35€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
           "meal": "Velouté de cèpes",
           "ingredients": "Aux truffes",
-          "price": "20€"}'>
-    </include>
-          <div class="start">PLATS</div>
-          <include src="src/components/menu-card.html" locals='{
+          "price": "20€"}'
+              >
+              </include>
+            </div>
+            <div class="start">PLATS</div>
+            <div class="card-block">
+              <include
+                src="src/components/menu-card.html"
+                locals='{
             "meal": "Poulet rôti aux herbes de Provence",
             "ingredients": "Et sa crème de truffe",
-            "price": "40€"}'>
-      </include>
-        <include src="src/components/menu-card.html" locals='{
+            "price": "40€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
           "meal": "Langouste rôtie",
           "ingredients": "Et ses légumes de saison",
-          "price": "35€"}'>
-    </include>
-      <include src="src/components/menu-card.html" locals='{
+          "price": "35€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
         "meal": "Côte de boeuf Angus",
         "ingredients": "Et sa purée de panais",
-        "price": "44€"}'>
-  </include>
+        "price": "44€"}'
+              >
+              </include>
+            </div>
             <div class="start">DESSERTS</div>
-            <include src="src/components/menu-card.html" locals='{
+            <div class="card-block">
+              <include
+                src="src/components/menu-card.html"
+                locals='{
               "meal": "Farandole de desserts",
               "ingredients": "Du chef",
-              "price": "18€"}'>
-        </include>
-          <include src="src/components/menu-card.html" locals='{
+              "price": "18€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
             "meal": "Crème brulée",
             "ingredients": "Revisitée",
-            "price": "22€"}'>
-      </include>
-        <include src="src/components/menu-card.html" locals='{
+            "price": "22€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
           "meal": "Tiramisu",
           "ingredients": "À la noisette",
-          "price": "23€"}'>
-    </include>
-      </div>
-      <div class="btn-box">
-        <button class="gradient-btn" type="button">
-          Commander
-        </button>
+          "price": "23€"}'
+              >
+              </include>
+            </div>
+            <div class="btn-box">
+              <button class="gradient-btn" type="button">Commander</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>

@@ -14,11 +14,7 @@
   <body>
     <header>
       <a href="./index.html" class="omf-logo">
-        <img
-          src="../assets/ohmyfood.png"
-          height="30"
-          alt="Logo du site Ohmyfood!"
-        />
+        <img src="../assets/ohmyfood.png" alt="Logo du site Ohmyfood!" />
       </a>
     </header>
     <section>
@@ -30,58 +26,91 @@
           </div>
           <div class="menu-card-wrapper flex">
             <div class="start">ENTRÉES</div>
-            <include src="src/components/menu-card.html" locals='{
+            <div class="card-block">
+              <include
+                src="src/components/menu-card.html"
+                locals='{
               "meal": "Tartare de poulpe acidulé",
               "ingredients": "Aux zests d’orange",
-              "price": "25€"}'>
-        </include>
-          <include src="src/components/menu-card.html" locals='{
+              "price": "25€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
             "meal": "Velouté de légumes d’antan",
             "ingredients": "Carotte, panais, topinambour",
-            "price": "35€"}'>
-      </include>
-        <include src="src/components/menu-card.html" locals='{
+            "price": "35€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
           "meal": "Soupe à l’oignon",
           "ingredients": "Revisitée",
-          "price": "20€"}'>
-    </include>
-          <div class="start">PLATS</div>
-          <include src="src/components/menu-card.html" locals='{
+          "price": "20€"}'
+              >
+              </include>
+            </div>
+            <div class="start">PLATS</div>
+            <div class="card-block">
+              <include
+                src="src/components/menu-card.html"
+                locals='{
             "meal": "Coquilles Saint-Jacques",
             "ingredients": "Accompagnées d’une purée de panais",
-            "price": "40€"}'>
-      </include>
-        <include src="src/components/menu-card.html" locals='{
+            "price": "40€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
           "meal": "Magret de canard",
           "ingredients": "Et parmentier de pommes de terre",
-          "price": "35€"}'>
-    </include>
-      <include src="src/components/menu-card.html" locals='{
+          "price": "35€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
         "meal": "Pigeonneau d’Ille-et-Vilaine",
         "ingredients": "Sur son lit de gnocchis aux légumes",
-        "price": "44€"}'>
-  </include>
+        "price": "44€"}'
+              >
+              </include>
+            </div>
             <div class="start">DESSERTS</div>
-            <include src="src/components/menu-card.html" locals='{
+            <div class="card-block">
+              <include
+                src="src/components/menu-card.html"
+                locals='{
               "meal": "Pétales de violettes glacés",
               "ingredients": "Et purée de noisettes",
-              "price": "18€"}'>
-        </include>
-          <include src="src/components/menu-card.html" locals='{
+              "price": "18€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
             "meal": "Fondant au chocolat",
             "ingredients": "Revisité",
-            "price": "22€"}'>
-      </include>
-        <include src="src/components/menu-card.html" locals='{
+            "price": "22€"}'
+              >
+              </include>
+              <include
+                src="src/components/menu-card.html"
+                locals='{
           "meal": "Millefeuille croustillant",
           "ingredients": "Myrtilles et pâte d’amande",
-          "price": "23€"}'>
-    </include>
-      </div>
-      <div class="btn-box">
-        <button class="gradient-btn" type="button">
-          Commander
-        </button>
+          "price": "23€"}'
+              >
+              </include>
+            </div>
+            <div class="btn-box">
+              <button class="gradient-btn" type="button">Commander</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
