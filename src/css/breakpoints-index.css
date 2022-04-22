@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+  .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurants-wrapper h1 {
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+
+  .steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .steps-item-text {
+    padding-right: 50px;
+  }
+
+  .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+
+  .steps-wrapper {
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+
+  .card {
+    width: calc(50% - 1rem);
+  }
+}
